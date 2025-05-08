@@ -1,13 +1,16 @@
-name: Ping Render App
+name: Ping Both Render Apps
 
 on:
   schedule:
-    - cron: "*/10 * * * *" # Every 10 minutes (UTC)
-  workflow_dispatch: # Optional: manual run from GitHub UI
+    - cron: "*/9 * * * *" # Every 9 minutes
+  workflow_dispatch:
 
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping your Render app
-        run: curl -I https://library-analytics-api.onrender.com
+      - name: Ping Library Analytics API
+        run: curl -I https://library-analytics-api.onrender.com/
+
+      - name: Ping Chat App Backend
+        run: curl -I https://chat-app-backend-kfym.onrender.com/health
