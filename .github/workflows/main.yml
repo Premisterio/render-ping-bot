@@ -2,7 +2,7 @@ name: Ping Both Render Apps
 
 on:
   schedule:
-    - cron: "*/9 * * * *" # Every 9 minutes
+    - cron: "*/11 * * * *" # Every 11 minutes
   workflow_dispatch:
 
 jobs:
