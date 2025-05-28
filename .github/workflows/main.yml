@@ -1,8 +1,8 @@
-name: Ping Both Render Apps
+name: Render Ping Bot
 
 on:
   schedule:
-    - cron: "*/11 * * * *" # Every 11 minutes
+    - cron: "*/9 * * * *" # Every 9 minutes
   workflow_dispatch:
 
 jobs:
