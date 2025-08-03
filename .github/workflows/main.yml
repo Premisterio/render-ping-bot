@@ -3,7 +3,7 @@ name: Render Ping Bot
 on:
   schedule:
     # Every 14 minutes between 08:00 and 20:00 UTC 
-    - cron: '*/14 5-16 * * *'
+    - cron: '*/13 5-16 * * *'
   workflow_dispatch:
 
 jobs:
